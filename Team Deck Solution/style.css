@@ -1,0 +1,243 @@
+#backgroundImage{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed;
+    height: 350px;
+    background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0, 0, 0, 0.8)) , url(StudyingandConcert.jpg);
+   
+    
+}
+
+.jumbotron jumbotron-fluid{
+    background-color: black;
+}
+
+.heading{
+     color: white;
+     text-align: center;
+}
+
+.subtext{
+    color:#146EB4}
+
+
+  
+
+/* Button Styling */
+    .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    padding: 16px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid green;
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    border-radius: 4px;
+    
+
+
+}
+
+.button1 {
+  background-color: #FF9900;; 
+  color: black; 
+  border: 2px solid  #FF9900;
+  text-decoration: black;
+  font-weight: bold;
+ 
+  
+
+}
+
+.button:hover {
+  background-color: #FFC642; /* Green */
+}
+
+#navbar:hover {
+ background-color: #FF9900; /* Green */
+}
+
+.AmazonBlue{
+    color: #146EB4;
+    color:#00A8E1;
+    text-align: center;
+
+}
+
+.babyBlue{
+    color: lightblue; 
+}
+.AmazonGold{
+    color: #FF9900;
+}
+
+.infoImage{
+    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed;
+    border-radius: 50%;
+    max-width: 90%;
+    align-items: right;
+    height: 70%;
+
+
+}
+
+
+/* Modal Images */
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+.pz{
+    font-weight: bold;
+}
+
+
+:root{
+    --grey: #909090;
+    --darkGrey: #231F20;
+    --border: #333; 
+
+}
+
+
+
+
+body {
+  background: #ff5f6d;
+  background: -webkit-linear-gradient(to right, #ff5f6d, #ffc371);
+  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  min-height: 100vh;
+}
+
+#button-addon1 {
+  color: #ffc371;
+}
+
+i {
+  color: #ffc371;
+}
+
+.form-control::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#282d32;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:16px;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:14px;
+  margin-bottom:0;
+}
