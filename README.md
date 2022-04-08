@@ -1,4 +1,4 @@
-# Getting Started
+# Team DECK North Carolina Agricultural and Technical State University 2022 Amazon Hackathon Solution 
 ## Problem Statement
 What’s the new service (i.e new Amazon Prime Benefit ) that you can provide to Prime Student Members to make their/your lives better?
 ###  Background
@@ -42,17 +42,39 @@ Mentors are your valuable resource and don’t hesitate to ask any question or h
 ## Problem Solution Instructions
 To assist you in implementing your solution to the problem statement, we have provided files that you will edit to build your landing page.  Please review the **Evaluation Criteria** section for further information around what kind of content we expect to see on your landing pages.  We are also asking that students implement an “email notification” feature on their landing page that will send a welcome email to new users that decide to sign up for Amazon Prime as a result of the new service offering you have come up with.  This is to give you exposure to cloud technologies that Amazon Software Development Engineers use in their everyday work, and to help you think with **Customer Obsession,** an Amazon Leadership Principle that’s at the core of our business and influences the way we approach all problems we work on. This is also the way we welcome new customers who visit our Amazon Prime landing page and decide to enroll in Prime today!
 
-### Team Handout
 
-Within this repository you will see the following files.  Below we explain what each file is for and how they should be used/populated:
+# Proposed Solution at Hackathon: 3rd Place Winners: Team DECK
+## Team DECK Members: Darrian Belcher, Kyandre’ Roberts, Chanslor Green, Evan Smith
 
-1. **index.html** - this is the main HTML file that you will populate with the content to display on your web page.  You can can think of HTML as the **content** of websites (the text, pictures, forms, etc. that you all are familiar with).  For more information, you can look at this “Intro to HTML” overview here: https://www.w3schools.com/html/html_intro.asp 
-    1. Note that the “navigation bar” we provide you is **non-functional** (e.g. if you click on any of the links in the navigation bar, nothing happens).  This is intentional!  Your landing page is “static” meaning it’s not connected to Amazon’s retail website, and is meant for demonstration purposes only.  That said, if you want to read more about navigation bars and how they work, feel free!
-    2. https://www.w3schools.com/bootstrap/bootstrap_navbar.asp
-2. **/static/index.css** - CSS files are used to define the **styling** of a website.  You can use CSS to define color themes, font sizes, font styling, page layout and formatting, etc.  If you’d like more information about CSS, you can visit this link here:  https://www.w3schools.com/css/css_intro.asp
-3. **/static/email_trigger.js** - this file will contain the function that will invoke an API call to a service hosted in AWS to send a welcome email when a new user signs up for Amazon Prime on your landing page.  We’ve filled most of the code in for you, as the focus of this project is page content and the program benefits, not getting a small feature like this to work.  That said, at Amazon we challenge our engineers to **Think Big** and **Learn and Be Curious**, so your mentor will encourage to think how this functionality might be improved in order to enhance the customer experience!
-4. **/fonts/amazon_ember_condensed/** - this folder contains a series of ```.tff``` files which provide various “Amazon” fonts in use across our digital UI/UX experiences.  Feel free to incorporate any of them in your page styling.  This will give your landing page a distinctly “Amazon” feel, and give you experience building web content that aligns with existing thematic elements 
-5. **lambda_email_trigger.py** - this is the function that will be called to actually send the welcome email for users that sign up for Prime on your landing page.  We’ve implemented the actual functionality of “sending the email” for you, but encourage you to **Learn and Be Curious** if you’re wondering how the functionality works.  You will have to provide the actual content of the welcome email yourselves.  Like in the ```index.html``` file, we leave the actual content of the welcome email completely up to you!
+## Product Name:  Amazon Student Prime Package. Includes Amazon Success and Amazon City
+
+### Amazon Success: 
+As college students, two time-consuming tasks that we all generally participate in are the tedious scholarship and internship search processes. Affordability is a crucial aspect of earning a college degree. In addition, the importance of professional development and internship opportunities to the evolution of career aspirations can’t be overstated. Amazon success offers students direct access to scholarships, internships, and mentorship from Amazon and partner companies’ employees.
+
+Includes: 
+* Scholarships
+* Internship opportunities
+* Mentorship from Amazon + partner company employees 
+* Resume Reviews
+
+
+### Amazon City: 
+We can all admit that the idea of attending college in a city that you know nothing about is scary. Some common questions that may plague your mind include: Where will I meet friends? What types of events will occur on and off-campus? With so many social events available in your city, you could potentially be overwhelmed. Amazon City acts as a hub of social, sports, and overall nightlife events within a 30 mile radius of the user’s zip-code, that will not only allow you to make friends and have amazing experiences, but also enable and promote the prioritization of mental health and self-care. Don’t burn yourself out with your academics and professional development events. Use Amazon city to ensure that you have a well-rounded college experience. 
+
+Includes: 
+* Nightlife
+* Local restaurants
+* Campus Events
+* Sports Events 
+
+
+## Valuable Benefits 
+* Students have access to an all-in-1 bundle that is catered to the needs of young college students.
+* A platform that encourages professional development.
+* Helps students find a social life in a new environment.
+* Encourages a balanced lifestyle between academic/career success and social engagement.
+
+
 
 ### Problem Solution Architecture
 
@@ -73,43 +95,5 @@ At Amazon we love architecture diagrams.  Our engineers use them to illustrate h
     1. https://aws.amazon.com/ses/
 6. **3rd party email service** - this is the resource that SES interacts with to actually send your email.  If your email account is with “gmail”, for example, SES will interact with gmail’s email servers to send your email for you
 
-### Resources and FAQ
-
-1. How do I actually host my landing page in S3?
-    1. Resource: https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html
-    2. Your mentor will guide you on the steps required to actually host your landing page in S3.  You can follow the provided guide, or reach out to them for clarification and help
-2. How do I create a RESTful API in API Gateway?
-    1. Resource: https://www.youtube.com/watch?v=XeYPSDeBj1g
-    2. Your mentor will provide you the configuration settings you need to make in order to make your API *publicly accessible* (e.g. accessible from your landing page).  The provided resource provides a quick overview of the steps involved, but your mentor will be providing additional context on how this is done
-3. How do I host my “email trigger” function in AWS Lambda?
-    1. Resource: https://riptutorial.com/aws-lambda/example/22790/hello-world---lambda-function
-    2. As with 1 and 2, your mentor will be providing more context about AWS Lambda and how to ensure your Lambda function is accessible by API Gateway
-4. How do I set up SES (Simple Email Service)?
-    1. Resource: https://docs.aws.amazon.com/ses/latest/dg/setting-up.html
-    2. This will actually be the easiest step in your solution, but your mentor will give you more context.  You will need to register the email addresses for all the mentors from Amazon, as well as your personal email address(es).  Mentors will attempt to sign up for Prime from your landing page, and will use their Amazon email addresses as their signup ID to see if they successfully receive a welcome email
-5. I have no idea how to create web content using HTML.  Where can I get help?
-    1. Use the “Intro to HTML” page in the *Team Handout* section, and ask your mentor for help!
-    2. Use the web!  There is no shame in asking others for help, or researching on your own how certain technologies work.  Learn and Be Curious!
-6. I have no idea how to customize the styling of my landing page using CSS.  Help!
-    1. See 5!  Review the resource in the *Team Handout* section and ask your mentor for help!
-7. My mentor isn’t responding/isn’t in my breakout room.  Who do I ask for help?
-    1. We will provide you a list of all the mentors participating in the Hackathon.  We encourage you to try and implement your solution before immediately asking for help, but if your mentor is for some reason not available feel free to reach out to one of the other participating mentors for help
-
-
-__**More Resources!**__
-
-[Sending email through AWS SES using AWS SDK](https://docs.aws.amazon.com/ses/latest/dg/send-an-email-using-sdk-programmatically.html)
-
-[Create dynamic contact forms for S3 static websites using AWS Lambda, AWS API  Gateway and AWS SES](https://aws.amazon.com/blogs/architecture/create-dynamic-contact-forms-for-s3-static-websites-using-aws-lambda-amazon-api-gateway-and-amazon-ses/) 
-
-[Bootstrap documentation](https://getbootstrap.com/)
-
-[Trigger an email when adding an item to a DynamoDB table](https://www.slappforge.com/blog/email-triggers-when-a-new-record-is-created-in-dynamodb) 
-
-[Enabling CORS for a REST API](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-cors.html)
-
-[Creating web forms in Bootstrap](https://blog.hubspot.com/website/bootstrap-form-css)
-
-[Creating websites using Bootstrap (tutorial)](https://websitesetup.org/bootstrap-tutorial-for-beginners/)
 
 
